@@ -1,0 +1,18 @@
+'use strict';
+
+var mongoose = require('mongoose');
+
+var SearchesSchema = new mongoose.Schema({
+  startDate: Date,
+  endDate: Date,
+  city: String
+  hotels: [{
+    name: String,
+    price: Number,
+    images: [String],
+    reviews: [String]
+  }],
+  created: Date
+});
+
+module.exports = mongoose.model('Availability', SearchesSchema);
