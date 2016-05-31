@@ -5,7 +5,7 @@ var mongoose = require('mongoose');
 var SearchesSchema = new mongoose.Schema({
   startDate: Date,
   endDate: Date,
-  city: String
+  city: String,
   hotels: [{
     name: String,
     price: Number,

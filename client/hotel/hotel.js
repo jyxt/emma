@@ -18,7 +18,7 @@ angular.module( 'sample.hotel', [
   $scope.search = function(){
     $http({
       method: 'GET',
-      url: 'http://localhost:3001/hc?checkIn='+dateObj2Str($scope.booking.checkIn)+'&checkOut='+dateObj2Str($scope.booking.checkOut)+'&city='+$scope.booking.city.id
+      url: 'http://localhost:3001/join?checkIn='+dateObj2Str($scope.booking.checkIn)+'&checkOut='+dateObj2Str($scope.booking.checkOut)+'&city='+$scope.booking.city.id
     }).then(function successCallback(response) {
       // this callback will be called asynchronously
       // when the response is available
